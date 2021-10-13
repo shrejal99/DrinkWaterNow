@@ -1,5 +1,10 @@
-# DrinkWaterNow
-💧 Simple water drinking reminder game application 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84700316/137103526-98171d8d-e3ca-4502-9c2c-47ab86606457.png" width=300px>
+  </p>
+
+
+<h1 align="center"> Drink Water Now </h1>
+<p align="center">💧 Simple water drinking reminder game application </h1> 
 
 ## The main function:
 
