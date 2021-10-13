@@ -35,15 +35,15 @@ function checklight() {
 function turnlight() {
     light = !light;
 }
-//计时器，在后台默默计时
+
 function timer() {
-    //黑夜停止计时
+   
     if (!light) {
         return count / 36
     }
     if (count < 3600) {
         count++;
-        //给浏览器右上角图标加上计时badge
+        //badge
         chrome.browserAction.setBadgeText({
             text: Math.floor(count / 60) + ''
         });
@@ -51,14 +51,14 @@ function timer() {
             color: "#70d2c9"
         });
     }
-    //60分钟通知喝水！
+    ！
     if (count == 3600) {
         duckbecomeslim();
         notificationAction();
         count++;
     }
     if (count >= 3600) {
-        //图标改成红色和sos文案！
+        
         chrome.browserAction.setBadgeText({
             text: 'sos'
         });
@@ -71,7 +71,7 @@ function timer() {
 
 function refresh() {
     count = 0;
-    //清除五分钟倒计时
+    
     window.clearInterval(countdownId);
 }
 
@@ -85,7 +85,7 @@ var Countdown = function () {
 };
 
 function notificationAction() {
-    //notification的id要清空，否则create的时候之前id没有清空则会失效
+   
     chrome.notifications.clear("1",
         (id) => {
 
@@ -93,15 +93,15 @@ function notificationAction() {
     chrome.notifications.create("1", {
         type: 'basic',
         iconUrl: 'img/logo.png',
-        title: '快喝水！',
+        title: 'Cheers',
         buttons: [{
-            title: "喝水",
+            title: "Hurray",
             iconUrl: 'img/yellowsmile.png'
         }, {
-            title: "等会儿",
+            title: "Shit",
             iconUrl: 'img/redsmile.png'
         }],
-        message: '已经一个小时没喝水了！小鸭子渴死了！'
+        message: 'DRINK WATER！'
     });
 }
 
