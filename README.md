@@ -22,3 +22,10 @@ The first chrome plugin for young people! Teach young people write plugins at th
 
 The main function: * Through the badge to remind you how long it has been since drinking the last time ②click the top right corner to refresh the countdown
                    * click the sun to switch to the day/night to pause time losing ④every 60 minutes will prompt at once and the label will change color
+                   
+## Contributors :
+1. Shrejal Singh
+2. Ruthvik
+3. Ekta Arora
+4. Aaquib Ali
+
