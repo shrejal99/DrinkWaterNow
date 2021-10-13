@@ -25,7 +25,7 @@ The main function: * Through the badge to remind you how long it has been since 
                    
 ## Contributors :
 1. Shrejal Singh
-2. Ruthvik
+2. Ruthvik Kanukunta
 3. Ekta Arora
 4. Aaquib Ali
 
